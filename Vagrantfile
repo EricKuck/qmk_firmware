@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", privileged: false, inline: <<-SHELL 
     sudo -H DEBIAN_FRONTEND=noninteractive apt-get update
-    sudo -H DEBIAN_FRONTEND=noninteractive apt-get -yq install binutils gcc-avr avr-libc uisp avrdude flex byacc bison
+    sudo -H DEBIAN_FRONTEND=noninteractive apt-get -yq install binutils gcc-avr avr-libc uisp avrdude flex byacc bison make
    SHELL
 
 end
