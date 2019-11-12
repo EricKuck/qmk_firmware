@@ -1,0 +1,29 @@
+#define KC_ESC_NUM LT(_NUM, KC_ESC)
+#define KC_GRV_NUM LT(_NUM, KC_GRV)
+#define KC_CARET KC_CIRCUMFLEX
+#define KC_VOLUP KC__VOLUP
+#define KC_VOLDOWN KC__VOLDOWN
+#define KC_PLAY KC_MPLY
+#define KC_FFWD KC_MFFD
+#define KC_NOP KC_NO
+#define KC_CTRL KC_LCTRL
+#define KC_ALT KC_LALT
+#define KC_CMD KC_LGUI
+#define KC_SHIFT KC_LSFT
+#define KC_SPACE KC_SPC
+#define KC_RGB_TOG RGB_TOG
+#define KC_RESET RESET
+#define KC_DIVIDE KC_KP_SLASH
+#define KC_MULTIPLY KC_KP_ASTERISK
+#define KC_SUBTRACT KC_KP_MINUS
+#define KC_ADD KC_KP_PLUS
+#define KC_L_PAREN KC_LEFT_PAREN
+#define KC_R_PAREN KC_RIGHT_PAREN
+#define KC_ARROW_L MO(_ARROW)
+#define KC_NUM_L MO(_NUM)
+#define KC_SYM_L MO(_SYM)
+
+enum custom_keycodes {
+  KC_SFT_F6 = SAFE_RANGE,
+};
+
