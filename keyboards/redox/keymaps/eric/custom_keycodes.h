@@ -1,5 +1,6 @@
 #define KC_ESC_NUM LT(_NUM, KC_ESC)
 #define KC_GRV_NUM LT(_NUM, KC_GRV)
+#define KC_TAB_SYM LT(_SYM, KC_TAB)
 #define KC_CARET KC_CIRCUMFLEX
 #define KC_VOLUP KC__VOLUP
 #define KC_VOLDOWN KC__VOLDOWN
@@ -19,6 +20,7 @@
 #define KC_ADD KC_KP_PLUS
 #define KC_L_PAREN KC_LEFT_PAREN
 #define KC_R_PAREN KC_RIGHT_PAREN
+#define KC_RGB_S RGB_M_SW
 #define KC_ARROW_L MO(_ARROW)
 #define KC_NUM_L MO(_NUM)
 #define KC_SYM_L MO(_SYM)
