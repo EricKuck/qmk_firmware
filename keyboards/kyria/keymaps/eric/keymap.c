@@ -18,6 +18,7 @@
 
 #define ESC_NUM LT(PAD, KC_ESC)
 #define GUI_SPC MT(MOD_LGUI, KC_SPC)
+#define SCRNSHT LGUI(LCTL(LSFT(KC_4)))
 
 char wpm_str[10];
 uint16_t wpm_graph_timer = 0;
@@ -58,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [PAD] = LAYOUT(
        _______, _______, _______, _______, _______, _______,                                     _______, KC_7,    KC_8,    KC_9,    _______, _______,
-       _______, _______, _______, _______, _______, _______,                                     _______, KC_4,    KC_5,    KC_6,    _______, _______,
+       _______, SCRNSHT, _______, _______, _______, _______,                                     _______, KC_4,    KC_5,    KC_6,    _______, _______,
        _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, KC_MPLY, KC_MPLY, _______, KC_1,    KC_2,    KC_3,    _______, _______,
                                   _______, _______, _______, _______, _______, _______, _______, KC_0,    KC_0,    _______
     ),
