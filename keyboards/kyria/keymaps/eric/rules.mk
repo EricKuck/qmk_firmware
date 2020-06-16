@@ -4,3 +4,5 @@ RGBLIGHT_ENABLE = yes      # Enable keyboard RGB underglow
 LEADER_ENABLE = no        # Enable the Leader Key feature
 MOUSEKEY_ENABLE = no
 WPM_ENABLE = yes
+
+EXTRAFLAGS += -flto

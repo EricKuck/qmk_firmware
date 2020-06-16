@@ -21,7 +21,7 @@
 #endif
 
 #ifdef RGBLIGHT_ENABLE
-  #define RGBLIGHT_ANIMATIONS
+  #define RGBLIGHT_EFFECT_RAINBOW_MOOD
   #define RGBLIGHT_HUE_STEP 8
   #define RGBLIGHT_SAT_STEP 8
   #define RGBLIGHT_VAL_STEP 8
@@ -33,3 +33,25 @@
 // Allows to use either side as the master. Look at the documentation for info:
 // https://docs.qmk.fm/#/config_options?id=setting-handedness
 #define EE_HANDS
+
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+
+#ifndef NO_PRINT
+#define NO_PRINT
+#endif // !NO_PRINT
+
+#ifndef NO_ACTION_MACRO
+#define NO_ACTION_MACRO
+#endif // !NO_ACTION_MACRO
+
+#ifndef NO_ACTION_FUNCTION
+#define NO_ACTION_FUNCTION
+#endif // !NO_ACTION_FUNCTION
+
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
+
+#define NO_ACTION_ONESHOT
